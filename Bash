@@ -1,0 +1,26 @@
+import tensorflow as tf
+from tensorflow.keras.datasets import fashion_mnist
+import matplotlib.pyplot as plt
+
+# Cargar los datos
+(x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
+x_train, x_test = x_train / 255.0, x_test / 255.0  # Normalizar
+
+# Construir el modelo
+modelo = tf.keras.Sequential([
+    tf.keras.layers.Flatten(input_shape=(28, 28)),
+    tf.keras.layers.Dense(128, activation='relu'),
+    tf.keras.layers.Dense(10, activation='softmax')
+])
+
+# Compilar
+modelo.compile(optimizer='adam',
+               loss='sparse_categorical_crossentropy',
+               metrics=['accuracy'])
+
+# Entrenar
+modelo.fit(x_train, y_train, epochs=5)
+
+# Evaluar
+loss, acc = modelo.evaluate(x_test, y_test)
+print(f'Precisión: {acc:.2f}')
