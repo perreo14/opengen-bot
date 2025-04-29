@@ -1,0 +1,6 @@
+mi-proyecto/
+│
+├── main.py
+├── README.md
+├── .gitignore
+└── requirements.txt
