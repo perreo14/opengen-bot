@@ -1,0 +1,15 @@
+#!/bin/bash
+
+RUTA_ORIGEN="/ruta/a/tus/archivos"
+RUTA_DESTINO="/ruta/a/tu/backup"
+FECHA=$(date +%Y%m%d_%H%M%S)
+ARCHIVO_BACKUP="$RUTA_DESTINO/backup_$FECHA.tar.gz"
+
+echo "Iniciando backup de $RUTA_ORIGEN a $ARCHIVO_BACKUP..."
+tar -czvf "$ARCHIVO_BACKUP" "$RUTA_ORIGEN"
+
+if [ $? -eq 0 ]; then
+  echo "Backup completado exitosamente en $ARCHIVO_BACKUP"
+else
+  echo "Error durante el backup."
+fi
