@@ -1,0 +1,15 @@
+import pandas as pd
+
+# Crear un DataFrame
+data = {'Nombre': ['Alice', 'Bob', 'Charlie'],
+        'Edad': [25, 30, 28],
+        'Ciudad': ['Nueva York', 'Londres', 'París']}
+df = pd.DataFrame(data)
+
+# Mostrar el DataFrame
+print(df)
+
+# Filtrar personas mayores de 27 años
+mayores_de_27 = df[df['Edad'] > 27]
+print("\nPersonas mayores de 27:")
+print(mayores_de_27)
