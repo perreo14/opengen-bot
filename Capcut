@@ -1,0 +1,40 @@
+{
+  "timeline": [
+    {
+      "type": "text"([0:00 - 0:03]  
+¿Sabías que esta ensalada puede ayudarte a controlar tu azúcar?
+
+[0:03 - 0:06]  
+Fresca, colorida, llena de nutrientes.
+
+[0:06 - 0:10]  
+Perfecta para personas con diabetes.  
+¡Y además deliciosa!
+
+[0:10 - 0:13]  
+¿Te animas a probarla hoy?
+),
+      "content": "¡Comida saludable para ti!",
+      "start": 0,
+      "end": 3,
+      "position": "center",
+      "style": "bold"
+    },
+    {
+      "type": "text"(**Título grande:**  
+Salud real en cada bocado
+
+**Subtítulo:**  
+Garbanzos, camote, brócoli y mucho sabor
+
+**Llamado a la acción:**  
+¡Pruébalo hoy!
+),
+      "content": "Ideal para personas con diabetes",
+      "start": 3,
+      "end": 6,
+      "position": "bottom",
+      "style": "italic"
+    }
+  ]
+}
