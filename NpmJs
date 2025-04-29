@@ -1,0 +1,7 @@
+- npm i axios fs
+ - node index.js <accountType> <amount> <outputFile>
+
+accountType: 
+cantidad:
+OutputFile: 
+ - nano hesaplar
