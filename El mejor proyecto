@@ -1,0 +1,29 @@
+pip install flask
+mi_web_flask/
+│
+├── app.py                # Código principal de la aplicación
+└── templates/
+    └── index.html        # Página web que se mostrará
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def inicio():
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi primera web con Flask</title>
+</head>
+<body>
+    <h1>¡Hola, esta es mi página web con Flask!</h1>
+    <p>Creada con Python.</p>
+</body>
+</html>
+python app.py
+ * Running on http://127.0.0.1:5000/
