@@ -1,0 +1,10 @@
+git clone https://github.com/tu-usuario/tu-repositorio.git
+cd tu-repositorio
+python main.py
+node archivo.js
+index.html
+javac Archivo.java
+java Archivo
+gcc archivo.c -o programa
+./programa
+php archivo.php
